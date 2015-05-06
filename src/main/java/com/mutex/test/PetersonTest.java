@@ -42,7 +42,7 @@ public class PetersonTest {
 	}
 	
 	public static void main(String[] args) throws InterruptedException {
-		int numThreads = 3;
+		int numThreads = 2; // Peterson assumes only 2 threads are working
 		int perThread = 100;
 		new PetersonTest(numThreads, perThread).test();
 	}
